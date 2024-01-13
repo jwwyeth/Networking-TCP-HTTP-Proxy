@@ -1,0 +1,11 @@
+image: "git-docker-classes.mst.edu/containers/container"
+
+generaltester:
+  script:
+  - bash grade.sh
+  timeout: 2 hours 30 minutes
+  artifacts:
+    when: always
+    paths:
+      - results.txt
+    expire_in: 1 month
